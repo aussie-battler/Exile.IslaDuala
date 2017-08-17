@@ -5,17 +5,17 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
 		nextID=137;
 	};
 	class Camera
 	{
-		pos[]={7314.8418,34.125614,4251.3647};
-		dir[]={-0.78722328,-0.34025159,-0.51432657};
-		up[]={-0.28484806,0.94033074,-0.18610352};
-		aside[]={-0.5469619,-2.6891939e-008,0.83717275};
+		pos[]={3713.5015,84.413239,5656.4941};
+		dir[]={0.95688879,-0.17408159,-0.2325545};
+		up[]={0.16916189,0.98472923,-0.041111391};
+		aside[]={-0.23616026,3.9566658e-008,-0.9717263};
 	};
 };
 binarizationWanted=0;
@@ -72,7 +72,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=27;
+		items=25;
 		class Item0
 		{
 			dataType="Group";
@@ -1689,12 +1689,13 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5826.7388,0,7957.853};
-			name="ExileMarker1";
+			name="ExileTraderZone2";
+			text="TraderZone2Exile";
 			markerType="ELLIPSE";
 			type="ExileTraderZone";
 			colorName="ColorBlue";
-			a=100;
-			b=100;
+			a=250;
+			b=250;
 			id=101;
 			atlOffset=-14.9;
 			class CustomAttributes
@@ -1743,16 +1744,60 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={5826.7393,14.9,7957.8525};
-			name="ExileMarker2";
+			position[]={5826.7388,0,7957.853};
+			name="ExileTraderZone2Icon";
 			type="ExileTraderZoneIcon";
 			id=102;
+			atlOffset=-14.9;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item3
 		{
 			dataType="Marker";
-			position[]={8656.9785,8.2557764,8728.1357};
-			name="ExileMarker3";
+			position[]={8656.9785,0,8728.1357};
+			name="ExileSpecopsTrader1";
+			text="SpecopsTrader1Exile";
 			markerType="ELLIPSE";
 			type="ExileNonConstructionZone";
 			colorName="ColorBlack";
@@ -1761,7 +1806,7 @@ class Mission
 			b=50;
 			drawBorder=1;
 			id=103;
-			atlOffset=0.00093460083;
+			atlOffset=-8.2548418;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1808,18 +1853,60 @@ class Mission
 		class Item4
 		{
 			dataType="Marker";
-			position[]={8656.9785,38.006088,8728.1348};
-			name="ExileMarker4";
+			position[]={8656.9785,0,8728.1357};
+			name="ExileSpecopsTraderIcon1";
 			type="ExileSpecOpsTraderIcon";
 			id=104;
-			atlOffset=25.150856;
+			atlOffset=-8.2548418;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item5
 		{
 			dataType="Marker";
-			position[]={8892.6475,27.9,1360.5658};
-			name="ExileMarker5";
-			text="Le Port";
+			position[]={8892.6475,0,1360.566};
+			name="ExileSpawnBoona";
+			text="BoonaSpawn";
 			markerType="ELLIPSE";
 			type="ExileSpawnZone";
 			colorName="ColorBlack";
@@ -1828,6 +1915,7 @@ class Mission
 			b=150;
 			drawBorder=1;
 			id=105;
+			atlOffset=-27.9;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1874,26 +1962,11 @@ class Mission
 		class Item6
 		{
 			dataType="Marker";
-			position[]={8892.6475,135.08615,1360.5658};
-			name="ExileMarker6";
+			position[]={8892.6484,0,1360.5691};
+			name="ExileSpawnZoneBoonaIcon";
 			type="ExileSpawnZoneIcon";
 			id=106;
-			atlOffset=107.18615;
-		};
-		class Item7
-		{
-			dataType="Marker";
-			position[]={1453.4841,15.48,4960.8726};
-			name="ExileMarker11";
-			text="La Pessagne";
-			markerType="ELLIPSE";
-			type="ExileSpawnZone";
-			colorName="ColorBlack";
-			fillName="Border";
-			a=150;
-			b=150;
-			drawBorder=1;
-			id=111;
+			atlOffset=-27.9;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1937,21 +2010,121 @@ class Mission
 				nAttributes=2;
 			};
 		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={1453.484,0,4960.873};
+			name="SpawnSpookdorp";
+			text="SpookdorpSpawn";
+			markerType="ELLIPSE";
+			type="ExileSpawnZone";
+			colorName="ColorBlack";
+			fillName="Border";
+			a=150;
+			b=150;
+			drawBorder=1;
+			id=111;
+			atlOffset=-15.48;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Spawn Zone";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
 		class Item8
 		{
 			dataType="Marker";
-			position[]={1453.4841,9.3154297,4960.8726};
-			name="ExileMarker12";
+			position[]={1453.484,0,4960.873};
+			name="ExileSpawnZoneSpookdorpIcon";
 			type="ExileSpawnZoneIcon";
 			id=112;
-			atlOffset=-6.1645699;
+			atlOffset=-15.48;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item9
 		{
 			dataType="Marker";
-			position[]={8208.8398,14.91,5612.4907};
-			name="ExileMarker13";
-			text="Houdan";
+			position[]={8208.8398,0,5612.4912};
+			name="SpawnCanto";
+			text="CantoSpawn";
 			markerType="ELLIPSE";
 			type="ExileSpawnZone";
 			colorName="ColorBlack";
@@ -1960,6 +2133,7 @@ class Mission
 			b=175;
 			drawBorder=1;
 			id=113;
+			atlOffset=-14.91;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2006,18 +2180,60 @@ class Mission
 		class Item10
 		{
 			dataType="Marker";
-			position[]={8208.8398,83.651199,5612.4907};
-			name="ExileMarker14";
+			position[]={8208.8389,0,5612.4922};
+			name="ExileSpawnZoneCantoIcon";
 			type="ExileSpawnZoneIcon";
 			id=114;
-			atlOffset=68.741196;
+			atlOffset=-14.91;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item11
 		{
 			dataType="Marker";
-			position[]={2349.5479,8,9750.0693};
-			name="ExileMarker15";
-			text="Lolisse";
+			position[]={2349.5481,0,9750.0693};
+			name="SpawnTarisol";
+			text="TarisolSpawn";
 			markerType="ELLIPSE";
 			type="ExileSpawnZone";
 			colorName="ColorBlack";
@@ -2026,6 +2242,7 @@ class Mission
 			b=150;
 			drawBorder=1;
 			id=115;
+			atlOffset=-8;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2072,18 +2289,60 @@ class Mission
 		class Item12
 		{
 			dataType="Marker";
-			position[]={2349.5474,19.516006,9750.0693};
-			name="ExileMarker16";
+			position[]={2349.5518,0,9750.0674};
+			name="ExileSpawnZoneTarisolIcon";
 			type="ExileSpawnZoneIcon";
 			id=116;
-			atlOffset=4.5026636;
+			atlOffset=-8;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item13
 		{
 			dataType="Marker";
-			position[]={4176.0195,15.096296,5209.4927};
-			name="ExileMarker17";
-			text="Larche";
+			position[]={4176.02,0,5209.4932};
+			name="SpawnWilderness";
+			text="WildernessSpawn";
 			markerType="ELLIPSE";
 			type="ExileSpawnZone";
 			colorName="ColorBlack";
@@ -2092,6 +2351,7 @@ class Mission
 			b=150;
 			drawBorder=1;
 			id=117;
+			atlOffset=-15.096272;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2138,26 +2398,11 @@ class Mission
 		class Item14
 		{
 			dataType="Marker";
-			position[]={4176.02,25.152374,5209.4927};
-			name="ExileMarker18";
+			position[]={4176.0225,0,5209.4917};
+			name="ExileSpawnZoneWildernessIcon1";
 			type="ExileSpawnZoneIcon";
 			id=118;
-			atlOffset=10.056044;
-		};
-		class Item15
-		{
-			dataType="Marker";
-			position[]={3724.2749,0,7452.2588};
-			name="ExileMarker19";
-			markerType="ELLIPSE";
-			type="ExileConcreteMixerZone";
-			colorName="ColorBlack";
-			fillName="Border";
-			a=100;
-			b=100;
-			drawBorder=1;
-			id=119;
-			atlOffset=-14.903465;
+			atlOffset=-15.096585;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2201,19 +2446,121 @@ class Mission
 				nAttributes=2;
 			};
 		};
+		class Item15
+		{
+			dataType="Marker";
+			position[]={3724.2749,0,7452.2588};
+			name="ExileConcreteMixerZone2";
+			text="ConcreteMixerZone2Exile";
+			markerType="ELLIPSE";
+			type="ExileConcreteMixerZone";
+			colorName="ColorBlack";
+			fillName="Border";
+			a=100;
+			b=100;
+			drawBorder=1;
+			id=119;
+			atlOffset=-14.903465;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Concrete Mixer Zone";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
 		class Item16
 		{
 			dataType="Marker";
-			position[]={3724.2751,14.903465,7452.2588};
-			name="ExileMarker20";
+			position[]={3724.2747,0,7452.2588};
+			name="ExileConcreteMixerIcon2";
 			type="ExileConcreteMixerZoneIcon";
 			id=120;
+			atlOffset=-14.903466;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item17
 		{
 			dataType="Marker";
 			position[]={2690.488,0,1419.488};
-			name="ExileMarker21";
+			name="ConcreteMixerZone1";
+			text="Zone1ConcreteMixer";
 			markerType="ELLIPSE";
 			type="ExileConcreteMixerZone";
 			colorName="ColorBlack";
@@ -2269,44 +2616,11 @@ class Mission
 		class Item18
 		{
 			dataType="Marker";
-			position[]={2690.4888,68.433228,1419.4875};
-			name="ExileMarker22";
-			type="ExileConcreteMixerZoneIcon";
-			id=122;
-			atlOffset=64.546349;
-		};
-		class Item19
-		{
-			dataType="Marker";
-			position[]={5101.2417,119.15703,2249.0059};
-			name="ExileMarker23";
-			type="ExileAircraftTraderIcon";
-			id=123;
-			atlOffset=104.21703;
-		};
-		class Item20
-		{
-			dataType="Marker";
-			position[]={2060.5645,131.96452,6298.5332};
-			name="ExileMarker24";
+			position[]={2059.9224,0,6298.9185};
+			name="ExileBoatSellerIcon1";
 			type="ExileBoatTraderIcon";
 			id=124;
-			atlOffset=139.498;
-		};
-		class Item21
-		{
-			dataType="Marker";
-			position[]={3724.7451,0,7452.0391};
-			name="ExileMarker27";
-			markerType="ELLIPSE";
-			type="ExileNonConstructionZone";
-			colorName="ColorBlack";
-			fillName="Border";
-			a=250;
-			b=250;
-			drawBorder=1;
-			id=127;
-			atlOffset=-14.903215;
+			atlOffset=8.0008745;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2350,11 +2664,12 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item22
+		class Item19
 		{
 			dataType="Marker";
 			position[]={5101.4722,0,2248.905};
-			name="ExileMarker28";
+			name="ExileAircraftTraderZone1";
+			text="AircraftTraderZone1Exile";
 			markerType="ELLIPSE";
 			type="ExileNonConstructionZone";
 			colorName="ColorBlue";
@@ -2405,35 +2720,14 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item23
+		class Item20
 		{
 			dataType="Marker";
-			position[]={2690.5288,68.436844,1419.5076};
-			name="ExileMarker32";
+			position[]={2690.4812,0,1419.4946};
+			name="ExileConcreteMixerIcon1";
 			type="ExileConcreteMixerZoneIcon";
 			id=132;
-			atlOffset=64.547508;
-		};
-		class Item24
-		{
-			dataType="Marker";
-			position[]={8497.4473,123.29199,7886.5259};
-			name="ExileMarker30";
-			type="ExileBoatTraderIcon";
-			id=130;
-			atlOffset=128.01881;
-		};
-		class Item25
-		{
-			dataType="Marker";
-			position[]={7259.4341,9.3507633,4248.9912};
-			name="ExileMarker1_1";
-			markerType="ELLIPSE";
-			type="ExileTraderZone";
-			colorName="ColorBlue";
-			a=100;
-			b=100;
-			id=135;
+			atlOffset=-3.8863115;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2477,13 +2771,214 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item26
+		class Item21
 		{
 			dataType="Marker";
-			position[]={7259.4346,9.3507671,4248.9907};
-			name="ExileMarker2_1";
+			position[]={8497.4473,0,7886.5259};
+			name="ExileBoatSellerIcon2";
+			type="ExileBoatTraderIcon";
+			id=130;
+			atlOffset=4.726819;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item22
+		{
+			dataType="Marker";
+			position[]={7259.4341,0,4248.9912};
+			name="ExileTraderZone1";
+			text="TraderZone1Exile";
+			markerType="ELLIPSE";
+			type="ExileTraderZone";
+			colorName="ColorBlue";
+			a=250;
+			b=250;
+			id=135;
+			atlOffset=-9.3507633;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Safe Zone";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item23
+		{
+			dataType="Marker";
+			position[]={7259.436,0,4248.9907};
+			name="ExileTraderZone1Icon";
 			type="ExileTraderZoneIcon";
 			id=136;
+			atlOffset=-9.3507729;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item24
+		{
+			dataType="Marker";
+			position[]={5101.4722,0,2248.9048};
+			name="ExileAircraftTraderZoneIcon1";
+			type="ExileAircraftTraderIcon";
+			id=123;
+			atlOffset=-14.94;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ExileMarkerZone";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ExileMarkerIcon";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };
